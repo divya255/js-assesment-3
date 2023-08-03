@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)a) calculate circle using function
+        function circlediameter (){
+            let r=+prompt("enter the radius");
+            let diameter=2 * r;
+            console.log(diameter);
+        }
+        circlediameter();
+        // b) using var
+        var input;
+        input =5;
+        var input=10;
+        console.log(input);
+        // using const
+        const value=5;
+        console.log(value);
+        // using let
+        let sample =5;
+        console.log(sample);
+        // 2) 
+        let a = prompt("Favorite programming language");
+        let b ="javascript";
+        let c ="python";
+        if (a===b) 
+         {
+        alert("great choice");
+        } 
+        else if (a===c) 
+         {
+        alert("Excellent");
+         } 
+         else
+         {
+        alert("That a good choice too");
+       }    
+       // 3) to upper case
+       let string="Welcome back";
+       string= string.toUpperCase();
+       console.log(string);
+       // 4) ave of num
+       let eg;
+       eg=(3+5)*2;
+       console.log(eg);
+       let num1="10";
+       let num2="10";
+       let num3="30";
+       let sumation= +num1 + +num2 + +num3;
+       console.log(`The Sum of three numbers are: ${sumation}`);
+       let average;
+       average=sumation/3 ;
+       console.log(`The average of three numbers are: ${average}`);
+       // 5) same last digit
+       var x=+prompt("Enter number 1");
+       var y=+prompt("Enter number 2");
+       var number1=x%10;
+       var number2=y%10;
+       if(number1===number2){
+        console.log("True");
+       }
+       else{
+        console.log("False");
+       } 
+      // 6) Using mark displaying grade
+      let score = +prompt("Enter Mark"); 
+      if(score >= 90){
+        console.log("Grade score is A");
+      }
+      else if(score >= 80 && score <= 89){
+        console.log("Grade score is B");
+      }
+      else if(score >= 70 && score <= 79){
+        console.log("Grade score is C");
+      }
+      else if(score >= 60 && score <= 69){
+        console.log("Grade score is C");
+      }
+      else  {
+        console.log("Grade score is F");
+      }
+      // 7) area of square using function
+           function squarearea() {
+           let l = 5;
+           let n = l*l;
+           console.log(n); 
+         }
+         squarearea();
+     //9) display month name using num in switch
+     let number = +prompt("Enter a month number between 1 and 12"); // "1" 2 3 4 5
+      switch (
+           number 
+         ) {
+           case 1: 
+             console.log("The month is january");
+             break;
+           case 2: 
+           console.log("The month is February");
+             break;
+           case 3: 
+           console.log("The month is March");
+             break;
+           case 4: 
+           console.log("The month is April");
+             break;
+           case 5: 
+           console.log("The month is May");
+             break;
+             case 6: 
+             console.log("The month is June");
+             break;
+             case 7: 
+             console.log("The month is July");
+             break;
+             case 8: 
+             console.log("The month is August");
+             break;
+             case 9: 
+             console.log("The month is September");
+             break;
+             case 10: 
+             console.log("The month is october");
+             break;
+             case 11: 
+             console.log("The month is November");
+             break;
+             case 12: 
+             console.log("The month is December");
+             break;
+           default:
+             console.log("Enter the number only between 1 and 12");
+             break;
+         }
+     // 10 a)power of three 
+     let base =2;
+     let exponent=3;
+     console.log(Math.pow(base, exponent));
+    // b) area of rectangle in arrow function
+    let area = (p1,p2) => {
+        return p1*p2;
+    }
+    console.log(area(3,3));
+
+    </script>
+</body>
+</html>
